@@ -222,9 +222,13 @@ export default {
   font-size: 18px;
 }
 .change {
+  text-align: center;
   position: absolute;
   right: 0;
-  color: #e16190 !important;
+  padding: 2px 6px !important;
+  border-radius: 3px;
+  background: #7ec0ec;
+  color: #fff !important;
   font-weight: bold;
   font-size: 12px;
 }
