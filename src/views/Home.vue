@@ -2,6 +2,7 @@
   <div class="home">
     <div class="header">
       <div class="title">Your relationship with <span>Sara</span></div>
+      <div class="tot-score">-15</div>
       <div class="subnav">
         <p>Overview</p>
         <p>Goals</p>
@@ -27,7 +28,7 @@
       <div class="the-past feed-card">
         <div class="card-content">
           <div class="day-section first">
-            <p class="card-title">Yesterday <span>Sep 3, 2020</span></p>
+            <p class="card-title">Yesterday <span>Sep 3, 2020</span> <span class="change">-15</span></p>
             <div class="gender-wrap">
               <div class="male gender-section">
                 <p class="gender-title">Mark</p>
@@ -42,7 +43,7 @@
             </div>
           </div>
           <div class="day-section">
-            <p class="card-title">Tuesday <span>Sep 2, 2020</span></p>
+            <p class="card-title">Tuesday <span>Sep 2, 2020</span> <span class="change">-5</span></p>
             <div class="gender-wrap">
               <div class="male gender-section">
                 <p class="gender-title">Mark</p>
@@ -57,7 +58,7 @@
             </div>
           </div>
           <div class="day-section last">
-            <p class="card-title">Monday <span>Sep 1, 2020</span></p>
+            <p class="card-title">Monday <span>Sep 1, 2020</span> <span class="change">+5</span></p>
             <div class="gender-wrap">
               <div class="male gender-section">
                 <p class="gender-title">Mark</p>
@@ -101,6 +102,7 @@ export default {
 .header {
   background: #f8f8f8;
   padding: 16px;
+  position: relative;
 }
 .title {
   font-size: 20px;
@@ -161,6 +163,7 @@ export default {
   
   p.card-title {
     color: #7ec0ec;
+    position: relative;
   }
 }
 .gender-section {
@@ -205,5 +208,24 @@ export default {
   color: #be2fde;
   margin-left: 1.5px;
   margin-right: 1.5px;
+}
+.tot-score {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border-radius: 12px;
+  z-index: 2;
+  background: #e16190;
+  padding: 2px 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+.change {
+  position: absolute;
+  right: 0;
+  color: #e16190 !important;
+  font-weight: bold;
+  font-size: 12px;
 }
 </style>
